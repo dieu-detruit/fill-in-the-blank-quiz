@@ -1,8 +1,8 @@
 <template>
     <v-container>
-        <v-layout justify-center align-content-center fill-height wrap class="blue">
+        <v-layout justify-center align-content-center fill-height wrap>
             <v-flex md8>
-                <v-card class="pink lighten-5" elevation="7" shaped>
+                <v-card class="pink lighten-5" elevation="7">
                     <v-card-title>もんだい！</v-card-title>
                     <v-container>
                         <v-layout wrap justify-center align-center fill-height>
@@ -18,8 +18,8 @@
 
                     <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn @click="show = true">正解を表示する</v-btn>
-                        <v-btn @click="goNext">次へ</v-btn>
+                        <v-btn @click="show = true" color="blue lighten-4">正解を表示する</v-btn>
+                        <v-btn @click="goNext" color="blue lighten-4">次へ</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-flex>
