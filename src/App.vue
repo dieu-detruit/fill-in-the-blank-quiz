@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-toolbar dark>
+      <v-avatar>
+        <v-img src="@/assets/gyoza.png" height="128px" width="128px"></v-img>
+      </v-avatar>
+      <v-toolbar-title>保育所保育方針</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+    </v-toolbar>
+    <v-container class="green lighten-5" style="height: 90vh;">
+      <v-layout align-center justify-center fill-height>
+        <Question></Question>
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Question from './components/Question';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    Question,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
